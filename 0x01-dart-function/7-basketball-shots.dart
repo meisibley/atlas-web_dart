@@ -8,20 +8,18 @@ int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
     if (key == '2 pointers') {
       sumA += value * 2;
     }
-    if (key == '3 pointers')
-    {
+    if (key == '3 pointers') {
       sumA += value * 3;
     }
   });
   teamB.forEach((key, value) {
-    if (key == 'Free throw') {
+    if (key == 'Free throws') {
       sumB += value;
     }
     if (key == '2 pointers') {
       sumB += value * 2;
     }
-    if (key == '3 pointers')
-    {
+    if (key == '3 pointers') {
       sumB += value * 3;
     }
   });
