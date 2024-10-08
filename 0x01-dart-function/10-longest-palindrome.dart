@@ -3,7 +3,7 @@ import '9-palindrome.dart';
 String longestPalindrome(String s) {
   int len = s.length;
   if (len < 3) {
-    return '';
+    return 'none';
   }
   String lstPal = '';
   for (int i = 0; i < len; i++) {
