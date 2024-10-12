@@ -55,7 +55,7 @@ class User {
       'name': name,
       'age': age,
       'height': height,
-      'user_password': _userPassword?.password ?? 'No Password',
+      //'user_password': _userPassword?.password ?? 'No Password',
     };
   }
 
@@ -71,6 +71,7 @@ class User {
     
   @override
   String toString() {
-      return 'User(id : $id ,name: $name, age: $age, height: $height, user_password: ${_userPassword?.password ?? "No Password"})';
+    bool pwdValid = _userPassword?.isValid() ?? false;
+    return 'User(id : $id ,name: $name, age: $age, height: $height, Password: $pwdValid)';
   }
 }
