@@ -10,7 +10,7 @@ class User {
     return {'id': id, 'name': name, 'age': age, 'height': height};
   }
 
-  static User fromJson(Map<String, dynamic> userJson) {
+  static User fromJson(Map<dynamic, dynamic> userJson) {
     return User(
       id: userJson['id'],
       name: userJson['name'],
