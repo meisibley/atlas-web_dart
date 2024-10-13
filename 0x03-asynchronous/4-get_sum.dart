@@ -23,7 +23,7 @@ Future<double> calculateTotal() async {
       sum += productPrice;
     }
     return sum;
-  } catch(error) {
+  } catch (error) {
     return -1;
   }
 }
